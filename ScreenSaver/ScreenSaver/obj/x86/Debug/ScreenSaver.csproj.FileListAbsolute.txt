@@ -1,0 +1,7 @@
+C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\bin\Debug\ScreenSaver.exe
+C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\bin\Debug\ScreenSaver.pdb
+C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\obj\x86\Debug\ScreenSaver.Form1.resources
+C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\obj\x86\Debug\ScreenSaver.Properties.Resources.resources
+C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\obj\x86\Debug\ScreenSaver.csproj.GenerateResource.Cache
+C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\obj\x86\Debug\ScreenSaver.exe
+C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\obj\x86\Debug\ScreenSaver.pdb
