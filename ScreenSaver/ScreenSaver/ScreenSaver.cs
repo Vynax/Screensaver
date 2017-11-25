@@ -12,7 +12,7 @@ namespace ScreenSaver
     public partial class ScreenSaver : Form
     {
         #region 宣告參數
-        List<Circle> listCirCle = new List<Circle>();
+        List<Figure> listCirCle = new List<Figure>();
 
         #endregion
         public ScreenSaver()
@@ -24,8 +24,11 @@ namespace ScreenSaver
         {
             timer1.Interval = 40;
             this.DoubleBuffered = true;
-            Circle tmp = new Circle();
+            Figure tmp = new Figure();
             listCirCle.Add(tmp);
+            this.Width = 800;
+            this.Height = 600;
+            CenterToScreen();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -35,7 +38,7 @@ namespace ScreenSaver
 
         private void ScreenSaver_Paint(object sender, PaintEventArgs e)
         {
-            foreach (Circle tmp in listCirCle)
+            foreach (Figure tmp in listCirCle)
             {
                 tmp.Draw(e.Graphics);
             }
@@ -44,21 +47,4 @@ namespace ScreenSaver
         
     }
 
-    class Circle
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
-        Pen blackPen;
-        Rectangle rect;
-        public Circle()
-        {
-            blackPen = new Pen(Color.Black);
-            rect = new Rectangle(0, 0, 100, 100);
-        }
-
-        public void Draw(Graphics e)
-        {
-            e.DrawArc(blackPen, rect, 0f, 360f);
-        }
-    }
 }

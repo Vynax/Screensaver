@@ -42,6 +42,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Name = "ScreenSaver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ScreenSaver";
             this.Load += new System.EventHandler(this.ScreenSaver_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.ScreenSaver_Paint);
