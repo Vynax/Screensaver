@@ -5,3 +5,12 @@ C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\obj\x86\Debug\ScreenS
 C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\obj\x86\Debug\ScreenSaver.csproj.GenerateResource.Cache
 C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\obj\x86\Debug\ScreenSaver.exe
 C:\Users\user\AppData\Local\Temporary Projects\ScreenSaver\obj\x86\Debug\ScreenSaver.pdb
+C:\Users\吳承岳\Documents\GitHub\Screensaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.exe
+C:\Users\吳承岳\Documents\GitHub\Screensaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.pdb
+C:\Users\吳承岳\Documents\GitHub\Screensaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.exe
+C:\Users\吳承岳\Documents\GitHub\Screensaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.pdb
+C:\Users\吳承岳\Documents\GitHub\Screensaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.Form1.resources
+C:\Users\吳承岳\Documents\GitHub\Screensaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.Properties.Resources.resources
+C:\Users\吳承岳\Documents\GitHub\Screensaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.ScreenSaver.resources
+C:\Users\吳承岳\Documents\GitHub\Screensaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.csproj.GenerateResource.Cache
+C:\Users\吳承岳\Documents\GitHub\Screensaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.csprojResolveAssemblyReference.cache
