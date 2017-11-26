@@ -22,10 +22,10 @@ namespace ScreenSaver
 
         private void ScreenSaver_Load(object sender, EventArgs e)
         {
-            timer1.Interval = 25;
+            timer1.Interval = 20;
             this.DoubleBuffered = true;
-            Figure tmp = new Figure( 100, 100 );
-            listCirCle.Add(tmp);
+            //Figure tmp = new Figure( 100, 100 );
+            //listCirCle.Add(tmp);
             this.Width = 800;
             this.Height = 600;
             CenterToScreen();
@@ -36,9 +36,9 @@ namespace ScreenSaver
         {
             foreach (Figure tmp in listCirCle)
             {
-                if (tmp.position.X + tmp.Width >= this.Size.Width || tmp.position.X <= 0)
+                if (tmp.position.X + tmp.Width >= this.Bounds.Right || tmp.position.X <= 0)
                     tmp.ReOffset(0);
-                if (tmp.position.Y + tmp.Height >= this.Size.Height || tmp.position.Y <= 0)
+                if (tmp.position.Y + tmp.Height >= this.Bounds.Bottom || tmp.position.Y <= 0)
                     tmp.ReOffset(1);
                 tmp.Move();
             }
@@ -52,6 +52,13 @@ namespace ScreenSaver
             {
                 tmp.Draw(e.Graphics);
             }
+        }
+
+        private void ScreenSaver_MouseClick(object sender, MouseEventArgs e)
+        {
+            Figure tmp = new Figure(100, 100);
+            tmp.position = e.Location;
+            listCirCle.Add(tmp);
         }
 
         

@@ -46,6 +46,7 @@
             this.Text = "ScreenSaver";
             this.Load += new System.EventHandler(this.ScreenSaver_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.ScreenSaver_Paint);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ScreenSaver_MouseClick);
             this.ResumeLayout(false);
 
         }

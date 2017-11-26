@@ -46,7 +46,8 @@ namespace ScreenSaver
                 offset = new Point(offset.X, offset.Y * -1);
         }
         int OneOrN1(){
-            int n = r.Next(1);
+            int n = r.Next(2);
+            Console.WriteLine(n);
             if (n == 1)
                 return 1;
             else
