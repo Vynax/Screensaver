@@ -36,9 +36,9 @@ namespace ScreenSaver
         {
             foreach (Figure tmp in listCirCle)
             {
-                if (tmp.position.X + tmp.Width >= this.Bounds.Right || tmp.position.X <= 0)
+                if (tmp.position.X + tmp.Width >= ClientRectangle.Width || tmp.position.X <= 0)
                     tmp.ReOffset(0);
-                if (tmp.position.Y + tmp.Height >= this.Bounds.Bottom || tmp.position.Y <= 0)
+                if (tmp.position.Y + tmp.Height >= ClientRectangle.Height || tmp.position.Y <= 0)
                     tmp.ReOffset(1);
                 tmp.Move();
             }

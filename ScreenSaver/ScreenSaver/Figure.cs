@@ -13,7 +13,7 @@ namespace ScreenSaver
         Pen blackPen;
         Rectangle rect;
         SolidBrush redBrush;
-        Random r = new Random();
+        Random r = new Random(Guid.NewGuid().GetHashCode());
         public int Width, Height;
         public Figure(int width, int height)
         {
