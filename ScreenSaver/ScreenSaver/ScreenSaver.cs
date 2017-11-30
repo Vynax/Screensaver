@@ -36,10 +36,15 @@ namespace ScreenSaver
         {
             foreach (Figure tmp in listCirCle)
             {
-                if (tmp.position.X + tmp.Width >= ClientRectangle.Width || tmp.position.X <= 0)
-                    tmp.ReOffset(0);
-                if (tmp.position.Y + tmp.Height >= ClientRectangle.Height || tmp.position.Y <= 0)
-                    tmp.ReOffset(1);
+                //0是左1是右
+                if (tmp.position.X + tmp.Width >= ClientRectangle.Right)
+                    tmp.ReDirect(-1,tmp.direct.Y);
+                else if (tmp.position.X <= ClientRectangle.Left)
+                    tmp.ReDirect(1, tmp.direct.Y);
+                if (tmp.position.Y + tmp.Height >= ClientRectangle.Bottom)
+                    tmp.ReDirect(tmp.direct.X, -1);
+                else if (tmp.position.Y <= ClientRectangle.Top)
+                    tmp.ReDirect(tmp.direct.X, 1);
                 tmp.Move();
             }
 
@@ -57,7 +62,7 @@ namespace ScreenSaver
         private void ScreenSaver_MouseClick(object sender, MouseEventArgs e)
         {
             Figure tmp = new Figure(100, 100);
-            tmp.position = e.Location;
+            tmp.position = new Point(e.Location.X - tmp.Width / 2, e.Location.Y - tmp.Height / 2);
             listCirCle.Add(tmp);
         }
 
