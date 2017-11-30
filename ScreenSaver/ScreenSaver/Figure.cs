@@ -30,7 +30,9 @@ namespace ScreenSaver
 
         public void Draw(Graphics e)
         {
-            e.FillPie(redBrush, rect, 0f, 360f);
+            e.FillEllipse(redBrush, rect);
+            e.DrawEllipse(blackPen, rect);
+            //e.FillPie(redBrush, rect, 0f, 360f);
         }
 
         public void Move()
