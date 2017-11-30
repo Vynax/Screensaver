@@ -47,8 +47,9 @@ namespace ScreenSaver
                     tmp.ReDirect(tmp.direct.X, 1);
                 tmp.Move();
             }
-
+            //this.Refresh();
             this.Invalidate();
+            //this.Update();
         }
 
         private void ScreenSaver_Paint(object sender, PaintEventArgs e)
