@@ -62,7 +62,7 @@ namespace ScreenSaver
 
         private void ScreenSaver_MouseClick(object sender, MouseEventArgs e)
         {
-            Figure tmp = new Figure(100, 100);
+            Figure tmp = new Figure(200, 100);
             tmp.position = new Point(e.Location.X - tmp.Width / 2, e.Location.Y - tmp.Height / 2);
             listCirCle.Add(tmp);
         }

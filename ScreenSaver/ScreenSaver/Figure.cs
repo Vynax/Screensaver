@@ -20,7 +20,7 @@ namespace ScreenSaver
         {
             blackPen = new Pen(Color.Black);
             redBrush = new SolidBrush(Color.Red);
-            position = new Point(400, 300);
+            //position = new Point(400, 300);
             offset = new Point(r.Next(10, 20), r.Next(10, 20));
             direct = new Point(OneOrN1(), OneOrN1());
             this.Width = width;
@@ -39,7 +39,7 @@ namespace ScreenSaver
         {
             position.X += offset.X * direct.X;
             position.Y += offset.Y * direct.Y;
-            rect = new Rectangle(position.X, position.Y, 100, 100);
+            rect = new Rectangle(position.X, position.Y, this.Width, this.Height);
         }
 
         public void ReDirect(int dx, int dy)//-1是左1是右
@@ -51,7 +51,7 @@ namespace ScreenSaver
         int OneOrN1()
         {
             int n = r.Next(2);
-            Console.WriteLine(n);
+            //Console.WriteLine(n);
             if (n == 1)
                 return 1;
             else
